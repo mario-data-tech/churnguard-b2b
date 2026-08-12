@@ -1,16 +1,20 @@
-export const metadata = {
-  title: 'ChurnGuard B2B',
-  description: 'Micro-SaaS de recuperación de churn involuntario',
-}
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "ChurnGuard B2B",
+  description:
+    "Revenue Recovery Intelligence for B2B businesses. Detect failed payments and recover lost revenue.",
+};
 
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode
-}) {
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="es">
       <body>{children}</body>
     </html>
-  )
+  );
 }
